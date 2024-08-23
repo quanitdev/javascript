@@ -1,0 +1,12 @@
+.card: hover front-side{
+    transform: rotateY(180deg);
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: 5s;
+    border-radius: 10px;
+    perspective: 1000px;
+}

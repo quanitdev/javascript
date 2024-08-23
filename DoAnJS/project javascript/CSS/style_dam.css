@@ -1,0 +1,237 @@
+body{
+    width:auto;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    background-color: #fbefee;
+}
+.navbar-expand-lg{
+    padding: 10px;
+    text-align: center;
+}
+.nav-item {
+    padding: 10px;
+    }
+.nav-link{
+    text-decoration: none;
+    text-align: center;
+}
+   
+.menu i{
+    transition: all 1s;
+    font-size: 150%;
+}
+
+.menu i:hover {
+    transform: rotate(-90deg);
+}
+
+.header-menu li{
+    margin-left: 1rem!important;
+}
+
+.logo{
+    width: 200px;
+    padding-left: 50px;
+   
+}
+.logo img{
+    width: 100%;
+}
+.navbar-nav {
+   justify-content: center;
+   margin: auto;
+}
+
+.dropdown{
+   padding-left: 20px;
+   padding-top: 10px;
+}
+.dropdown-c {
+    overflow:hidden;
+    background-color: #fbefee;
+    margin-left: -9px;
+    text-align: center;
+    padding: 7px;
+    border: none;
+
+}
+li{
+    float:left;
+    padding-left: 50px;
+
+}
+li a, .dropbtn{
+    display:inline-block;
+    color:#000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover,.dropdown:hover .dropbtn{
+    background-color: #fbefee;
+    color: #000;
+    font-weight: bold;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-c{
+    display:none;
+    position:absolute;
+    background-color: #fbefee;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-c a{
+    color:#000;
+    padding: 12px 16px;
+    text-decoration: none;
+ display:block;
+ text-align: center;
+}
+.dropdown-c a:hover{
+    background-color: white;
+    color:black;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-c{
+    display:block;
+}
+.cart a{
+    color: black;
+    text-decoration: none;
+}
+.cart a:hover{
+    color: black;
+    text-decoration: none;
+}
+.search {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 32px;
+    background-color: #fbefee;
+}
+.search input{
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    background-color: #fbefee;
+}
+.search button{
+    border-radius: 20px;
+    position: absolute;
+    left: 96%;
+}
+.search button i{
+    font-size: 100%;
+    width: auto;
+}
+
+.header nav ul li a{
+    color: black;
+border-bottom: 1px rgba(0, 0, 0, 0) solid;
+
+}
+.header nav ul li:hover a{
+border-bottom: 1px black solid;
+}
+
+ .sidebar-slide {
+        
+        width: 100%;
+        margin-left: -7px;
+        height: 50%;
+    }
+
+    #banchay {
+        padding: 40px;
+    }
+    .containers{
+        background-color: #fbefee;
+        padding:50px;
+    }
+    .sanpham{
+        background-color: white;
+        padding-left: 60px;
+        padding-right: 60px;    
+    }
+   
+    .card p-2 {
+        color:#000;
+        padding: 0.5rem!important;
+    }
+    .card-title{
+      text-align: center;
+    }
+    .card-title a{
+        color:#000;
+        text-decoration: none;
+    }
+    .card-title a:hover{
+        color:#000;
+        text-decoration: none;
+    }
+  
+    .card .card-img-top:hover {
+        transform: scaleX(-1);
+       
+     }
+     .product span{
+        width: 18%;
+        margin: 0 auto;
+        transition: all 1s;
+        color: rgb(0, 0, 0);
+    }
+     .product span:hover{
+        width: 50%;
+    }
+   
+.bg-pink {
+    background-color: #fbefee;
+    padding-left: 118px;
+}
+.footer {
+    padding-top: 40px;
+}
+  .link-footer {
+    list-style-type: none;
+     padding-top: 5px;
+    
+     margin-left: -100px;
+  }
+  .link-footer li{
+     padding-top: 10px;
+     padding-left: -10px;
+     
+  }
+  .link-footer a {
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+  }
+  .link-footer a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  .footer-contact i {
+    float: left;
+    font-size: 25px;
+    padding: 10px;
+  }
+  .footer-menu p{
+    padding: 20px;
+  }
+  .time-footer p{
+    padding-top:15px ;
+  }
+
+  @media screen and (max-width:600px){
+    .header,.fixed-top,.container,.bg-pink,.row,.footer,.logo,.banner{
+        width:50%;
+    } 
+}

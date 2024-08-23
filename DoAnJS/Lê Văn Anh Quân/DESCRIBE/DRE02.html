@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="../IMAGE/icon-logo.png" type="../IMAGE/icon-logo.png">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ĐẦM LỬNG CỔ TIM TÙNG XẾP-HNOSS</title>
+    <link rel="stylesheet" href="../CSS1/mota.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class=" header">
+        <div >
+            <nav class=" navbar  navbar-expand-lg">
+                <a href="../index.html" class="navbar-brand">
+                    <div class="logo">
+                        <img src="../../IMAGE/logo.png" alt="">
+                    </div>
+                </a>
+                    <button class="navbar-toggler menu" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                <div id="my-nav" class="collapse navbar-collapse ">
+                    <ul class="navbar-nav mr-auto header-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html" tabindex="-1" aria-disabled="false">HÀNG MỚI</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ÁO.html" tabindex="-1" aria-disabled="true">ÁO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Đầm.html" tabindex="-1" aria-disabled="true">ĐẦM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Váy.html" tabindex="-1" aria-disabled="true">VÁY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Quần.html" tabindex="-1" aria-disabled="true">QUẦN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Lienhe.html" tabindex="-1" aria-disabled="true">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                    <div class="mr-3 cart">
+                        <a href="../USER/signup.html" onclick="checkLogin()">
+                            <i class="fas fa-user"></i>
+                        </a>
+    
+    
+                        <a class="ml-3 mr-3" href="">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+    
+                    </div>
+                    <div class="form-inline search">
+                        <input type="text" class="form-control" placeholder="Search..">
+                        <button type="submit" class="form-control btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+         <div class="container chitiet bg-white">
+            <div class="row sanpham bg-white">
+                <div class="col-md-5 imgchange">
+                    <img src="../IMAGE/dam2.png" id="change">
+                </div>
+                <div class="col-md-1 imgchanges">
+                    <img src="../IMAGE/dam2-1.png" onclick="change1()">
+                    <img src="../IMAGE/dam1.png" onclick="change2()">
+                    <img src="../IMAGE/dam3-1.png" onclick="change3()">
+                    <img src="../IMAGE/dam4-1.png" onclick="change4()">
+                    <img src="../IMAGE/dam6.png" onclick="change5()">
+                    <img src="../IMAGE/dam8.png" onclick="change6()">
+                    
+                    </div>
+                    <script>
+                        function change1() {
+                                    document.getElementById("change").src = "../IMAGE/dam2.png"
+                        }
+                        function change2() {
+                                    document.getElementById("change").src = "../IMAGE/dam1.png"
+                        }
+                        function change3() {
+                                    document.getElementById("change").src = "../IMAGE/dam3-1.png"
+                        }
+                        function change4() {
+                                    document.getElementById("change").src = "../IMAGE/dam4-1.png"
+                        }
+                        function change5() {
+                                    document.getElementById("change").src = "../IMAGE/dam6.png"
+                        }
+                        function change6() {
+                                    document.getElementById("change").src = "../IMAGE/dam8.png"
+                        }
+                        
+                        </script>
+                <div class="col-md-6">
+                    <div class="row chitietsp">
+                        <p class="fs-5">ĐẦM LỬNG CỔ TIM TÙNG XẾP<br>
+                        <span class="text-black-50">MASP:DRE002</span><br>
+                        599,000₫</p>
+                    </div>
+                    <div class="row chitietsps">
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-dark"></button>&ensp;
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-light btn-outline-dark"></button>&ensp;
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <select class="form-select" aria-label="Default select example" style="width: 130px;">
+                                <option selected>Chọn SIZE</option>
+                                <option value="1">S</option>
+                                <option value="2">M</option>
+                                <option value="3">L</option>
+                              </select>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-hd text-end">HƯỚNG DẪN CHỌN SIZE</p>
+                        </div>
+                          
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 btn-add">
+                            <button class="btn btn-dark">MUA HÀNG</button>
+                        </div>
+                        <div class="col-md-6 btn-add">
+                            <button class="btn btn-white btn-outline-dark text-center add-to-cart add-cart btn btn-outline-warning " data-id="DAM2" data-name="ĐẦM LỬNG CỔ TIM TÙNG XẾP " data-img="dam2.png" data-price="599000" onclick="tks()">THÊM VÀO GIỎ HÀNG</button>
+                        </div>
+                    </div><br>
+                    <div class="row chitietsp">
+                        <p><b class="fs-5">MÔ TẢ</b><br>
+                            Miêu tả: ĐẦM LỬNG CỔ TIM TÙNG XẾP<br>
+
+                            Đặc tính: Thanh lịch - Hiện đại.<br>
+                            
+                            Thể loại: Trang phục công sở, dạo phố.<br>
+                            
+                            Size: S/M/L.<br>
+                            
+                            Chất liệu: Vải sợi poly tổng hợp x Organza.<br>
+                            
+                            Màu sắc: Trắng / Đen.<br>
+                            
+                            Lưu ý: Không tẩy, ngâm. Giặt nhẹ. Ủi nhiệt độ thấp. Không giặt chung với những sản phẩm dễ gây xước khác.<br>
+                            
+                            Số đo mẫu nữ: Chiều cdam: 168 cm. Số đo 3 vòng: 83 - 59 - 86 (Mặc size S).
+                        </p>
+                        <p><b class="fs-5">HƯỚNG DẪN BẢO QUẢN</b><br>
+                            - Giặt tay bằng nước lạnh<br>
+
+                            - Không ngâm, không tẩy<br>
+                            
+                            - Giặt riêng các sản phẩm khác màu<br>
+                            
+                            - Không vắt. <br>
+                            
+                            - Là ủi ở nhiệt độ thấp. Khuyến khích giặt khô.
+                        </p>
+                        <button class="btn btn-white btn-outline-dark fw-bold btn-adds">CỬA HÀNG GẦN NHẤT</button>
+                    </div>
+                    
+                        
+                    
+                </div>
+            </div>
+            
+            </div>
+    </div>
+
+   <div class="bg-pink">
+            <div class="container footer">
+                    <div class="row">
+                        <div class="col-md-3" >
+                        <div class="time-footer">
+                            <h3>Công ty TNHH HNOSS</h3>
+                            <p>Lịch làm việc: T2 - T7</p>
+                            <p>Sáng: 8h - 12h</p>
+                            <p>Chiều : 13h30 - 17h30</p>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Hướng dẫn</h3>
+                            <ul class="link-footer">
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Khắc laser là gì?</a></li>
+                                <li><a href="#">Hướng dẫn dán da</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Thông tin</h3>
+                            <ul class="link-footer">
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Giới thiệu HNOSS</a></li>
+                                <li><a href="#">Lưu ý cần biết</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Liên hệ</h3>
+                            <ul class="link-footer">
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><hr style="width: 90%;">
+                <div class="container">
+                    <div class="row footer-contact">
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <p>Hà Nội: Số 45 Ngõ 199 Hồ Tùng Mậu, P. Cầu Diễn.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <p>Hồ Chí Minh: 29 Đường Phan Chu Trinh, P Hiệp Phú.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Email:<br>info@hnoss.vn</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-mobile"></i>
+                            <p>Phone:<br>08.3344.0608</p>
+                        </div>
+                    </div>
+                </div><hr width="90%">
+                <div class="container footer-menu">
+                    <div class="row">
+                        <div class="col-md-4 text-start">
+                            <img src="../IMAGE/dathongbao.webp" style="max-width: 150px;">
+                        </div>
+                        <div class="col-md-8 text-start">
+                            <p>Giấy CNĐKKD: 0313026493 - Ngày Cấp: 24/11/2014 - Nơi Cấp: Sở kế hoạch và đầu tư</p>
+                        </div>
+                    </div>
+                </div>
+        </div>  
+        <script src="../JQuery/jquery-3.7.1.min.js"></script>
+        <script src="../JS/product.js"></script>
+        <script language="Javascript" src="../JS/giohang.js"></script>  
+    </body>
+    </html>

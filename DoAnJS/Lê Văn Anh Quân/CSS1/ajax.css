@@ -1,0 +1,121 @@
+#footer{
+    width: 1250px;
+    margin: 0 auto;
+
+}
+#tieude{
+    width: 770px;
+   
+}
+#tieude1{
+    width: 460px;
+    padding-left: 15px;
+}
+#tieude1 .title-icon{
+   padding-top: 10px;
+}
+.title a{
+    color: black;
+}
+.port1 {
+    padding-top: 0px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+#category{
+    width: 1349px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    
+}
+.very{
+    width: 1200px;
+    margin: 0 auto;
+}
+.len-very a{
+    color: black;
+}
+#view{
+    width: 1349px;
+    margin-top: 70px;
+    height: 500px;
+}
+.khungghep{
+    width: 25%;
+    padding-left: 40px;
+}
+.khungchung{
+    width: 1000px;
+    margin: 0 auto;
+}
+.hinhchung img{
+    width: 269px;
+    height: 160px;
+}
+#images{
+    width: 1349px;
+    margin: 0 auto;
+}
+.bg-chu p{
+    color: #525050;
+}
+#layoutcuoi{
+    width: 1349px;
+    height: 240px;
+    background-color: #252525;
+    margin-top: -23px;
+}
+ .trungtam{
+    width:1040px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.bg-mau1{
+    color: white;
+}
+.bg-mau2 a{
+    
+    color: #d4090c;
+    font-weight:600;
+}
+.bg-mau2{
+    margin-top: -15px;
+}
+.footer-nav__child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.ngaydang p{
+    font-size: 12px;
+    color: #525050;
+}
+.menu ul.sub-menu{
+    position: absolute;
+    display: none;
+}
+.menu li:hover ul.sub-menu{
+display: block;
+}
+ul.sub-menu{
+    width: 115px;
+    height: 100px;
+    font-size: 27px;
+}
+
+ul.sub-menu{
+    position: absolute;
+    background: #f8f8f8;
+    padding: 15px 0px;
+    list-style: none;
+}
+ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid;
+}
+#layoutcuoi .bg-mau1{
+    font-family:Arial, Helvetica, sans-serif
+}
+}

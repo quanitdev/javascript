@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="IMAGE/icon-logo.png" type="IMAGE/logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thanh Toán</title>
+    <link rel="stylesheet" href="CSS1/style-cart.css">
+
+    <!-- <link rel="stylesheet" href="CSS1/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid header">
+        <!-- <div class="container-fluid fixed-top">
+
+            <nav class=" navbar  navbar-expand-lg">
+                <a href="index.html" class="navbar-brand">
+                    <div class="logo">
+                        <img src="IMAGE/logo.png" alt="">
+                    </div>
+                </a>
+                <button class="navbar-toggler menu" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse ">
+                    <ul class="navbar-nav mr-auto header-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                        </li>
+                       
+                        
+                          <li class="nav-item">
+                            <a class="nav-link" href="ÁO.html" tabindex="-1" aria-disabled="true">ÁO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Đầm.html" tabindex="-1" aria-disabled="true">ĐẦM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Váy.html" tabindex="-1" aria-disabled="true">VÁY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quần.html" tabindex="-1" aria-disabled="true">QUẦN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lienhe.html" tabindex="-1" aria-disabled="true">LIÊN HỆ</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="mr-3 cart">
+                        <a href="#" onclick="checkLogin()">
+                            <i class="fas fa-user"></i>
+                        </a>
+
+
+                        <a class="ml-3 mr-3" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                    </div>
+                    <div class="form-inline search">
+                        <input type="text" class="form-control" placeholder="Search..">
+                        <button type="submit" class="form-control btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div> -->
+        <div class=" header">
+            <div >
+                <nav class=" navbar  navbar-expand-lg fixed-top">
+                    <a href="index.html" class="navbar-brand">
+                        <div class="logo">
+                            <img src="IMAGE/logo.png" alt="">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler menu" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse ">
+                        <ul class="navbar-nav mr-auto header-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="false">HÀNG MỚI</a>
+                        </li>
+                        <!-- <li class="dropdown">
+                            <a class="nav-link" href="#" class="dropbtn">ĐỒNG GIÁ 99K</a>
+                            <div class="dropdown-c">
+                                <a class="nav-link" href="#">99K</a>
+                                <a class="nav-link" href="#">299K</a>
+                                <a class="nav-link" href="#">399k</a>
+                            </div>
+                        </li> -->
+                         
+                            <li class="nav-item">
+                                <a class="nav-link" href="ÁO.html" tabindex="-1" aria-disabled="true">ÁO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Đầm.html" tabindex="-1" aria-disabled="true">ĐẦM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Váy.html" tabindex="-1" aria-disabled="true">VÁY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Quần.html" tabindex="-1" aria-disabled="true">QUẦN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Lienhe.html" tabindex="-1" aria-disabled="true">LIÊN HỆ</a>
+                            </li>
+    
+    
+                        </ul>
+                        <div class="mr-3 cart">
+                            <a href="USER/signup.html" onclick="checkLogin()">
+                                <i class="fas fa-user"></i>
+                            </a>
+    
+    
+                            <a class="ml-3 mr-3" href="cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+    
+                        </div>
+                        <div class="form-inline search">
+                            <input type="text" class="form-control" placeholder="Search..">
+                            <button type="submit" class="form-control btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="cart" class="container" style="height:auto; margin-top:6%;">
+            <h5>Giỏ Hàng</h5>
+            <div class="row">
+                <div class="col-8">
+                    <table class="table">
+                        <thead>
+                            <tr class='text-center'>
+                                <th>Ảnh</th>
+                                <th>Tên</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Tổng</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                            <tbody class="table show-cart-1">
+                            </tbody>
+                    </table>
+                </div>
+                <div class="col-4">
+                    <div class="thanhtoan">
+                        <div class="price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="price-text">Tạm tính: </div>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <div class="mr-0">
+                                        <span class="total-cart total-1"></span>
+                                        <div class="d-inline  total-1"><sup>đ</sup></div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div>Phí vận chuyển: </div>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <div class="mr-0">
+                                        <span class="text-end fst-italic">Miễn phí</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-3">
+                                    <div class="fw-bold fs-4">Tổng tiền: </div>
+                                </div>
+                                <div class="col-6 mt-3 text-right">
+                                    <div class="mr-0">
+                                        <span class="total-cart total"></span>
+                                        <div class="d-inline total"><sup>đ</sup></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 button text-center">
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#diachinhanhang">
+                                Tiến hành đặt hàng
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid  footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 time-footer">
+                <h3>Công ty TNHH Davis</h3>
+                <p>Lịch làm việc: T2 - T7</p>
+                <p>Sáng: 8h - 12h</p>
+                <p>Chiều : 13h30 - 17h30</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Hướng dẫn</h3>
+                <ul class="link-footer">
+                    <li><a href="#">Thanh toán</a></li>
+                    <li><a href="#">Khắc laser là gì?</a></li>
+                    <li><a href="#">Hướng dẫn dán da</a></li>
+                    <li><a href="#">Hướng dẫn vệ sinh đồ da</a></li>  
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Thông tin</h3>
+                <ul class="link-footer">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Giới thiệu DAVIS</a></li>
+                    <li><a href="#">Lưu ý cần biết</a></li>
+                    <li><a href="#">Đặc quyền KHTT</a></li>  
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Liên hệ</h3>
+                <ul class="link-footer">
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>  
+                </ul>
+            </div>
+        </div>
+    </div><hr>
+    <div class="container">
+        <div class="row footer-contact">
+            <div class="col-md-3">
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>Hà Nội: Số 45 Ngõ 199 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>Hồ Chí Minh: 29 Đường Phan Chu Trinh, P Hiệp Phú, Quận 9</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email:<br>info@hnoss.vn</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fa-solid fa-mobile"></i>
+                <p>Phone:<br>08.3344.0608</p>
+            </div>
+        </div>
+    </div><hr>
+    <div class="container footer-menu">
+        <div class="row">
+            <div class="col-md-4 text-start">
+                <img src="IMAGE/dathongbao.webp" style="max-width: 150px;">
+            </div>
+            <div class="col-md-8 text-start">
+                <p>Giấy CNĐKKD: 0313026493 - Ngày Cấp: 24/11/2014 - Nơi Cấp: Sở kế hoạch và đầu tư</p>
+            </div>
+        </div>
+    </div>
+</div>  
+    <!-- -Thông tin đặt hàng-- -->
+    <div class="modal fade" id="diachinhanhang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Địa chỉ nhận hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="">Họ Tên Người Nhận</label>
+                                <input type="text" class="form-control" id="inputnguoinhan">
+                                <div class="require-cart nguoinhan text-danger">
+                                    Vui lòng nhập thông tin người nhận
+                                  </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="">Số điện thoại</label>
+                                <input type="number" class="form-control" id="inputsdt">
+                                <div class="require-cart sdt text-danger">
+                                    Vui lòng nhập số điện thoại
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-8">
+                                <label for="">Địa chỉ</label>
+                                <input type="text" class="form-control" id="inputdiachi">
+                                <div class="require-cart diachi text-danger">
+                                    Vui lòng nhập địa chỉ
+                                  </div>
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="">Hình thức thanh toán</label>
+                                <select class="form-control" name="" id="inputthanhtoan" class="btn"
+                                    style="border: 1px black solid;">
+                                    <option value="0" selected> Chọn hình thức thanh toán</option>
+
+                                    <option value="1">Thanh toán bằng tiền mặt</option>
+                                    <option value="2">InternetBanking</option>
+                                    <option value="3">Zalopay</option>
+                                    <option value="4">Momo</option>
+                                </select>
+                                <div class="require-cart thanhtoan text-danger">
+                                    Vui lòng chọn hình thức thanh toán
+                                  </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="">Tỉnh - Thành phố</label>
+                                <select id="inputtinh" class="form-control">
+                                    <option value="0" selected>Chọn</option>
+                                    <option value="1">Huế</option>
+                                    <option value="2">Đà Nẵng</option>
+                                    <option value="3">Hồ Chí Minh</option>
+                                    <option value="4">Hà Nội</option>
+                                    <option value="5">Quảng Nam</option>
+                                    <option value="6">Quảng Ngãi</option>
+                                    <option value="7">Quảng Trị</option>
+                                </select>
+                                <div class="require-cart tinh text-danger">
+                                    Vui lòng chọn tỉnh
+                                  </div>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="inputemail">
+                                <div class="require-cart email text-danger">
+                                    Vui lòng nhập Email
+                                  </div>
+                            </div>
+                           
+                            <div class=" form-group col-12">
+                                <label for="">Ghi chú</label>
+                                <textarea class="form-control" name="" id="inputghichu" cols="30" rows="3"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="checkCart()" class="btn cartt btn-primary">Xác Nhận đặt hàng</button>
+                        </div>
+                        <!-- data-target="#xacnhan" data-dismiss="modal"-->
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----- -->
+    <div id="xacnhandathang">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                   
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-success">
+                    <div class="p-5 text-center text-danger animate__animated animate__bounce">
+                        <h4> Đặt hàng thành công </h4>
+                    </div>
+                    <div class="text-right">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html" class="clear-cart btn btn-outline-danger">Xong</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --modal-- -->
+
+   
+        <div class="thongtins">
+            <div class="modal-content">
+                
+                <div class="modal-body modal-success">
+                    <div class="text-center text-danger animate__animated animate__bounce"
+                        style="border-bottom: 2px rgba(255, 0, 0, 0.144) solid;">
+                        <h4> Thông tin đặt hàng </h4>
+
+                        <!-- <div id="test"></div> -->
+                    </div>
+
+                    <div class="animate__animated animate__backInRight">
+                        <div class="row col-7">
+                            
+                           <div class="col-4 text-primary">Họ tên:</div>
+                           <div class="col-8" id="inputnguoinhan1"></div>
+                            <div class="col-4 mt-2 text-primary">Số điện thoại:</div>
+                            <div class="col-8 mt-2" id="inputsdt1"></div>
+                                <div class="col-4 mt-2 text-primary">Địa chỉ:</div>
+                            <div class="col-8 mt-2" id="inputdiachi1"></div>
+                                <div class="col-4 mt-2 text-primary">Hình thức thanh toán:</div>
+                            <div class="col-8 mt-2" id="inputthanhtoan1"></div>
+                           <div class="col-4 mt-2 text-primary">Email:</div>
+                            <div class="col-8 mt-2" id="inputemail1"></div>
+                                <div class="col-4 mt-2 text-primary">Ghi chú:</div>
+                            <div class="col-8 mt-2" id="inputghichu1"></div>
+                                <div class="col-4 mt-2 text-primary">Số tiền cần trả:</div>
+                            <div class="col-8 mt-2">
+                                <span class="total-cart total-1"></span><sup>Đ</sup>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                        <button class="btn btn-outline-danger text-right" onclick="xacnhan()"
+                            >Xác nhận đặt hàng</button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+   
+    <!-- -------- -->
+</body>
+<script language="Javascript" src="JS/giohang.js"></script>
+</html>

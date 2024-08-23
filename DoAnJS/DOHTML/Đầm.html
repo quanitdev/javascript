@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="IMAGE/icon-logo.png" type="IMAGE/logo.png">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ĐẦM-HNOSS</title>
+    <link rel="stylesheet" href="CSS1/style-vay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS1/style-img.css">
+    <link rel="stylesheet" href="CSS1/spin.css">
+    <!-- <link rel="stylesheet" href="CSS1/Slider-img.css"> -->
+    <script src="JS/spin.js"></script>
+    <script src="JQuery/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+   
+    <div class=" header">
+        <div >
+            <nav class=" navbar  navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand">
+                    <div class="logo">
+                        <img src="IMAGE/logo.png" alt="">
+                    </div>
+                </a>
+                <button class="navbar-toggler menu" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse ">
+                    <ul class="navbar-nav mr-auto header-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="false">HÀNG MỚI</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a class="nav-link" href="#" class="dropbtn">ĐỒNG GIÁ 99K</a>
+                        <div class="dropdown-c">
+                            <a class="nav-link" href="#">99K</a>
+                            <a class="nav-link" href="#">299K</a>
+                            <a class="nav-link" href="#">399k</a>
+                        </div>
+                    </li> -->
+                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="ÁO.html" tabindex="-1" aria-disabled="true">ÁO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Đầm.html" tabindex="-1" aria-disabled="true">ĐẦM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Váy.html" tabindex="-1" aria-disabled="true">VÁY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Quần.html" tabindex="-1" aria-disabled="true">QUẦN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lienhe.html" tabindex="-1" aria-disabled="true">LIÊN HỆ</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="mr-3 cart">
+                        <a href="USER/signup.html" onclick="checkLogin()">
+                            <i class="fas fa-user"></i>
+                        </a>
+
+
+                        <a class="ml-3 mr-3" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                    </div>
+                    <div class="form-inline search">
+                        <input type="text" class="form-control" placeholder="Search..">
+                        <button type="submit" class="form-control btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="sidebar-slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="IMAGE/slide-dam.png" class="d-block w-100" alt="...">
+              </div>
+             
+              
+            </div>
+          </div>
+        </div>
+      
+
+         <div class="containerr">
+            <div id="slide">
+                <div class="item" style="background-image: url(../IMAGE/dam1.png); padding-bottom: 50px;">
+                    <div class="content" style="position: absolute; bottom: 10px; left: 5px; z-index: 2; background-color: rgba(255, 255, 255, 0.7); padding: 10px;">
+                        <div class="name">ĐẦM HOA PHỐI DÂY RUY BĂNG </div>
+                        <div class="des">Tạo nên sự quyến rũ</div>
+                        <button onclick="location.href='DESCRIBE/DRE01.html'">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../IMAGE/dam2.png);">
+                    <div class="content" style="position: absolute; bottom: 10px; left: 5px; z-index: 2; background-color: rgba(255, 255, 255, 0.7); padding: 10px;">
+                        <div class="name"> ĐẦM LƯNG CỔ TIM TÙNG XẾP</div>
+                        <div class="des">Tạo nên sự mát mẻ</div>
+                        <button onclick="location.href='DESCRIBE/DRE02.html'">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../IMAGE/dam3.png);">
+                    <div class="content" style="position: absolute; bottom: 10px; left: 5px; z-index: 2; background-color: rgba(255, 255, 255, 0.7); padding: 10px;">
+                        <div class="name">ĐẦM LỬNG CÚP 2 LỚP</div>
+                        <div class="des">Thon gọn cơ thể</div>
+                        <button onclick="location.href='DESCRIBE/DRE03.html'">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../IMAGE/dam4.png);">
+                    <div class="content" style="position: absolute; bottom: 10px; left: 5px; z-index: 2; background-color: rgba(255, 255, 255, 0.7); padding: 10px;">
+                        <div class="name">ĐẦM LỬNG SÁT NÁCH NHÚN CỔ</div>
+                        <div class="des">Tạo nên sự quý phái</div>
+                        <button onclick="location.href='DESCRIBE/DRE04.html'">See more</button>
+                    </div>
+                </div>
+                
+                <div class="item" style="background-image: url(../IMAGE/dam5.png);">
+                    <div class="content" style="position: absolute; bottom: 10px; left: 5px; z-index: 2; background-color: rgba(255, 255, 255, 0.7); padding: 10px;">
+                        <div class="name">ĐẦM THUN TAY LOE CUT OUT</div>
+                        <div class="des">Tạo nên sự duyên dáng</div>
+                        <button onclick="location.href='DESCRIBE/DRE05.html'">See more</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(../IMAGE/dam6.png);">
+                    <div class="content" style="position: absolute; bottom: 10px; left: 5px; z-index: 2; background-color: rgba(255, 255, 255, 0.7); padding: 10px;">
+                        <div class="name">ĐẦM LỬNG FORM A CỔ PHỐI</div>
+                        <div class="des">Tạo nên sự thanh lịch</div>
+                       
+                       <button onclick="location.href='DESCRIBE/DRE06.html'">See more</button>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+
+       
+         <div class="containers">
+            <div class="sanpham">
+                 <div class="row" >
+                    <div class="col-lg-3 col">
+                        <div class="card product p-2" style="width: auto;">
+                            <a  href="DESCRIBE/DRE01.html">
+                            <img class="pro card-img-top"src="IMAGE/dam1.png" >
+                            </a>        
+                        <div class="card-title product-title text-center">
+                            <a  href="DESCRIBE/DRE01.html" >ĐẦM HOA PHỐI DÂY RUY BĂNG  </a>
+                        </div>
+                        <div class="price text-center h6">549.000đ</div>
+                                       
+            
+                        <!-- <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="SP1"  data-img="dam1.png" onclick="tks()">
+                            <a><i class="fas fa-cart-plus"></i></a>
+                        </span> -->
+                        <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM1" data-name="ĐẦM HOA PHỐI DÂY RUY BĂNG " data-img="dam1.png" data-price="549000" onclick="tks()"><a>
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                    </span>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col">
+                    <div class="card product p-2" style="width: auto;">
+                        <a  href="DESCRIBE/SHIRTS2.html">
+                            <img class="pro card-img-top"src="IMAGE/dam2.png" >
+                        </a>        
+                    <div class="card-title product-title text-center">
+                        <a  href="DESCRIBE/SHIRTS2.html" > ĐẦM LƯNG CỔ TIM TÙNG XẾP </a>
+                    </div>
+                    <div class="price text-center h6">599.000đ</div>
+                    <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM2" data-name=" ĐẦM LƯNG CỔ TIM TÙNG XẾP " data-img="dam2.png" data-price="599000" onclick="tks()"><a>
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </span>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col">
+                    <div class="card product p-2" style="width: auto;">
+                        <a  href="DESCRIBE/DRE03.html">
+                            <img class="pro card-img-top"src="IMAGE/dam3.png" >
+                        </a>        
+                    <div class="card-title product-title text-center">
+                        <a  href="DESCRIBE/DRE03.html" >ĐẦM LỬNG CÚP 2 LỚP </a>
+                    </div>
+                    <div class="price text-center h6">599.000đ</div>
+                    <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM3" data-name="ĐẦM LỬNG CÚP 2 LỚP  " data-img="dam3.png" data-price="599000" onclick="tks()"><a>
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col">
+                    <div class="card product p-2" style="width: auto;">
+                        <a  href="DESCRIBE/DRE04.html">
+                            <img class="pro card-img-top"src="IMAGE/dam4.png" >
+                        </a>        
+                    <div class="card-title product-title text-center">
+                        <a  href="DESCRIBE/DRE04.html" >ĐẦM LỬNG SÁT NÁCH NHÚN CỔ </a>
+                    </div>
+                    <div class="price text-center h6">599.000đ</div>
+                      <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM4" data-name="ĐẦM LỬNG SÁT NÁCH NHÚN CỔ  " data-img="dam4.png" data-price="599000" onclick="tks()"><a>
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </span>
+                    </div>
+                    </div>
+                </div>
+                <div class="row" id="hot">
+                    <div class="col-lg-3 col">
+                        <div class="card product p-2" style="width: auto;">
+                            <a  href="DESCRIBE/DRE03.html">
+                            <img class="pro card-img-top"src="IMAGE/dam5.png" >
+                        </a>        
+                            <div class="card-title product-title text-center">
+                                <a  href="DESCRIBE/DRE03.html" >ĐẦM THUN TAY LOE CUT OUT </a>
+                            </div>
+                        <div class="price text-center h6">599.000đ</div>
+                        <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM5" data-name="ĐẦM THUN TAY LOE CUT OUT " data-img="dam5.png" data-price="599000" onclick="tks()"><a>
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                    </span>
+                    </div>
+                    </div>
+                    <div class="col-lg-3 col">
+                        <div class="card product p-2" style="width: auto;">
+                            <a  href="DESCRIBE/PANTS04.html">
+                                <img class="pro card-img-top"src="IMAGE/dam6.png" >
+                            </a>        
+                                <div class="card-title product-title text-center">
+                                    <a  href="DESCRIBE/PANTS04.html" >ĐẦM LỬNG FORM A CỔ PHỐI </a>
+                                </div>
+                            <div class="price text-center h6">499.000đ</div>
+                            <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM6" data-name="ĐẦM LỬNG FORM A CỔ PHỐI" data-img="dam6.png" data-price="499000" onclick="tks()"><a>
+                                <i class="fas fa-cart-plus"></i>
+                            </a>
+                        </span>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col">
+                            <div class="card product p-2" style="width: auto;">
+                                <a  href="DESCRIBE/PANTS01.html">
+                                <img class="pro card-img-top"src="IMAGE/dam7.png" >
+                            </a>        
+                                <div class="card-title product-title text-center">
+                                    <a  href="DESCRIBE/PANTS01.html" >ĐẦM NGẮN PHỐI NÚT</a>
+                                </div>
+                            <div class="price text-center h6">499.000đ</div>
+                            <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM7" data-name="ĐẦM NGẮN PHỐI NÚT" data-img="dam7.png" data-price="549000" onclick="tks()"><a>
+                                <i class="fas fa-cart-plus"></i>
+                            </a>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col">
+                        <div class="card product p-2" style="width: auto;">
+                            <a  href="DESCRIBE/DRE04.html">
+                            <img class="pro card-img-top"src="IMAGE/dam8.png" >
+                            </a>        
+                        <div class="card-title product-title text-center">
+                            <a  href="DESCRIBE/DRE04.html" >ĐẦM 2 DÂY DÀI BUỘC NƠ VAI </a>
+                        </div>
+                        <div class="price text-center h6">599.000đ</div>
+                        <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM8" data-name="ĐẦM 2 DÂY DÀI BUỘC NƠ VAI" data-img="dam8.png" data-price="599000" onclick="tks()"><a>
+                            <i class="fas fa-cart-plus"></i>
+                        </a>
+                    </span>
+                        </div>
+                    </div>  
+                    </div>
+            
+            </div>
+                <div class="bg-pink">
+                    <div class="container footer">
+                            <div class="row">
+                                <div class="col-md-3" >
+                                <div class="time-footer">
+                                    <h3>Công ty TNHH HNOSS</h3>
+                                    <p>Lịch làm việc: T2 - T7</p>
+                                    <p>Sáng: 8h - 12h</p>
+                                    <p>Chiều : 13h30 - 17h30</p>
+                                </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Hướng dẫn</h3>
+                                    <ul class="link-footer">
+                                        <li><a href="#">Thanh toán</a></li>
+                                        <li><a href="#">Khắc laser là gì?</a></li>
+                                        <li><a href="#">Hướng dẫn dán da</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Thông tin</h3>
+                                    <ul class="link-footer">
+                                        <li><a href="#">Blogs</a></li>
+                                        <li><a href="#">Giới thiệu HNOSS</a></li>
+                                        <li><a href="#">Lưu ý cần biết</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3>Liên hệ</h3>
+                                    <ul class="link-footer">
+                                        <li><a href="#">Chính sách đổi trả</a></li>
+                                        <li><a href="#">Chính sách vận chuyển</a></li>
+                                        <li><a href="#">Chính sách bảo mật</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><hr style="width: 90%;">
+                        <div class="container">
+                            <div class="row footer-contact">
+                                <div class="col-md-3">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    <p>Hà Nội: Số 45 Ngõ 199 Hồ Tùng Mậu, P. Cầu Diễn.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    <p>Hồ Chí Minh: 29 Đường Phan Chu Trinh, P Hiệp Phú.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p>Email:<br>info@hnoss.vn</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <i class="fa-solid fa-mobile"></i>
+                                    <p>Phone:<br>08.3344.0608</p>
+                                </div>
+                            </div>
+                        </div><hr width="90%">
+                        <div class="container footer-menu">
+                            <div class="row">
+                                <div class="col-md-4 text-start">
+                                    <img src="../IMAGE/dathongbao.webp" style="max-width: 150px;">
+                                </div>
+                                <div class="col-md-8 text-start">
+                                    <p>Giấy CNĐKKD: 0313026493 - Ngày Cấp: 24/11/2014 - Nơi Cấp: Sở kế hoạch và đầu tư</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>  
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="JS/giohang.js"></script>
+<script src="JS/product.js"></script>
+<script src="JS/script-img.js"></script>
+            </body>
+            </html>

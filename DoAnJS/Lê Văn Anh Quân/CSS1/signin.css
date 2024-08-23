@@ -1,0 +1,245 @@
+body{
+    width:auto;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    background-color: #fbefee;
+}
+.navbar-expand-lg{
+    padding: 10px;
+    text-align: center;
+}
+.nav-item {
+    padding: 10px;
+    }
+.nav-link{
+    text-decoration: none;
+    text-align: center;
+}
+   
+.menu i{
+    transition: all 1s;
+    font-size: 150%;
+}
+
+.menu i:hover {
+    transform: rotate(-90deg);
+}
+
+.header-menu li{
+    margin-left: 1rem!important;
+}
+
+.logo{
+    width: 200px;
+    padding-left: 50px;
+   
+}
+.logo img{
+    width: 100%;
+}
+.navbar-nav {
+   justify-content: center;
+   margin: auto;
+}
+
+.dropdown{
+   padding-left: 20px;
+   padding-top: 10px;
+}
+.dropdown-c {
+    overflow:hidden;
+    background-color: #fbefee;
+    margin-left: -9px;
+    text-align: center;
+    padding: 7px;
+    border: none;
+
+}
+li{
+    float:left;
+    padding-left: 50px;
+
+}
+li a, .dropbtn{
+    display:inline-block;
+    color:#000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover,.dropdown:hover .dropbtn{
+    background-color: #fbefee;
+    color: #000;
+    font-weight: bold;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-c{
+    display:none;
+    position:absolute;
+    background-color: #fbefee;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-c a{
+    color:#000;
+    padding: 12px 16px;
+    text-decoration: none;
+ display:block;
+ text-align: center;
+}
+.dropdown-c a:hover{
+    background-color: white;
+    color:black;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-c{
+    display:block;
+}
+.cart a{
+    color: black;
+    text-decoration: none;
+}
+.cart a:hover{
+    color: black;
+    text-decoration: none;
+}
+.search {
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 32px;
+    background-color: #fbefee;
+}
+.search input{
+    border-radius: 20px;
+    height: 30px;
+    border: none;
+    background-color: #fbefee;
+}
+.search button{
+    border-radius: 20px;
+    position: absolute;
+    left: 96%;
+}
+.search button i{
+    font-size: 100%;
+    width: auto;
+}
+
+.header nav ul li a{
+    color: black;
+border-bottom: 1px rgba(0, 0, 0, 0) solid;
+
+}
+.header nav ul li:hover a{
+border-bottom: 1px black solid;
+}
+
+
+
+.sign-up{
+    margin-top: 50px;
+    padding-top: 60px; 
+    text-align: center;
+    
+}
+.register {
+    width: 500px;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+    
+    }
+    .register input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+    .register input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+    .register label {
+        float: left;
+    }
+    .register hr {
+    border: 1px solid #929292;
+    margin-bottom: 25px;
+    }
+    .register .test{
+        font-size: 13px;
+    }
+    .register .submit {
+    background-color: #000000;
+    color: white;
+    padding: 15px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+    .register .submit:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: #000;
+    font-weight: bold;
+    }
+    .register .login {
+    background-color: #ffffff;
+    text-align: center;
+    }
+    .register .password{
+        color:#000;
+        text-decoration: none;
+        
+    }
+
+    
+    .bg-pink {
+        background-color: #fbefee;
+        padding-left: 118px;
+    }
+    .footer {
+        padding-top: 40px;
+    }
+      .link-footer {
+        list-style-type: none;
+         padding-top: 5px;
+        
+         margin-left: -100px;
+      }
+      .link-footer li{
+         padding-top: 10px;
+         padding-left: -10px;
+         
+      }
+      .link-footer a {
+        text-decoration: none;
+        color: #000;
+        text-align: right;
+      }
+      .link-footer a:hover {
+        text-decoration: underline;
+        color: #000;
+      }
+    
+      .footer-contact i {
+        float: left;
+        font-size: 25px;
+        padding: 10px;
+      }
+      .footer-menu p{
+        padding: 20px;
+      }
+      .time-footer p{
+        padding-top:15px ;
+      }
+    

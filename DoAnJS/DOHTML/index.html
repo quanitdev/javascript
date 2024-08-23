@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="IMAGE/icon-logo.png" type="IMAGE/icon-logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SẢN PHẨM MỚI - HNOSS</title>
+    <link rel="stylesheet" href="CSS1/style.css">
+    <link rel="stylesheet" href="CSS1/spin.css">
+    <link rel="stylesheet" href="CSS1/ajax.css">
+    <link rel="stylesheet" href="CSS1/style-slider-index.css">
+    <style>
+        #card{
+            padding : 20px 40px 0 0px ;
+            
+        }
+      
+        .navbar-brand img {
+  width: 120px;
+}
+.navbar-brand:hover, .navbar-brand:focus {
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.navbar-text {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar-toggler {
+  padding: 25px 0px 0 20px;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+    </style>
+    <script src="JQuery/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+</head>
+<body>
+    
+    <!-- <div class="spin-the-wheel-icon">
+        <a href="#spinTheWheelModal" data-toggle="modal">
+            <img src="IMAGE/spin-wheel-icon.png" alt="Spin the Wheel">
+        </a>
+    </div>
+    
+   
+    <div class="modal fade" id="spinTheWheelModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Spin the Wheel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <canvas id="spinWheelCanvas" width="300" height="300"></canvas>
+            <button id="spinButton" class="btn btn-primary mt-3">Spin</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+<div class=" header">
+        <div class=" navbar  navbar-expand-lg fixed-top">
+            <a href="index.html" >
+                <div class="logo">
+                    <img src="IMAGE/logo.png" alt="">
+                </div>
+            </a>
+            <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav mr-auto header-menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="false">HÀNG MỚI</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                        <a class="nav-link" href="#" class="dropbtn" >ĐỒNG GIÁ 99K</a>
+                        <div class="dropdown-c">
+                            <a class="nav-link" href="#">99K</a>
+                            <a class="nav-link" href="#">299K</a>
+                            <a class="nav-link" href="#">399k</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="ÁO.html" tabindex="-1" aria-disabled="true">ÁO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Đầm.html" tabindex="-1" aria-disabled="true">ĐẦM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Váy.html" tabindex="-1" aria-disabled="true">VÁY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Quần.html" tabindex="-1" aria-disabled="true">QUẦN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Lienhe.html" tabindex="-1" aria-disabled="true">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <div class="mr-3 cart">
+                    <!-- <a href="USER/signup.html">
+                        <i class="fas fa-user"></i>
+                    </a> -->
+                    <ul class="navbar-nav ml-auto ml-md-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw text-dark"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../user/signup.html">Logout</a>
+                            </div>
+                        </li>
+                 
+                     <a class="ml-3 mr-3 " id="card" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a> 
+                  
+                    
+                </ul>
+                </div>
+                <div class="form-inline search">
+                    <input type="text" class="form-control" placeholder="Search..">
+                    <button type="submit" class="form-control btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+
+<div class="sidebar-slide">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="100">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMAGE/slide-1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGE/slide-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGE/slide-3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<section class="slider-container">
+    <div class="slider-images">
+      <div class="slider-img">
+        <img src="../IMAGE/dam1.png" alt="1"  />
+      
+        <div class="details">
+          <h2 onclick="location.href='DESCRIBE/DRE01.html'">ĐẦM HOA PHỐI DÂY RUY BĂNG</h2>
+          <p>Cá tính</p>
+
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="../IMAGE/ao2.png" alt="2" />
+       
+        <div class="details">
+          <h2>ÁO KIỂU TAY NGẮN PHỐI BÈO</h2>
+          <p>Quý phái</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="../IMAGE/ao3.png" alt="3" />
+        
+        <div class="details">
+          <h2>ÁO HỞ VAI DÀI TAY</h2>
+          <p>Mới mẻ</p>
+        </div>
+      </div>
+      <div class="slider-img active">
+        <img src="../IMAGE/ao4.png" alt="4" />
+    
+        <div class="details">
+          <h2  onclick="location.href='DESCRIBE/AO04.html'">ÁO KHÉT NGỰC DÀI TAY</h2>
+          <p>Thanh lịch</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="../IMAGE/ao5.png" alt="5" />
+
+        <div class="details">
+          <h2>ÁO THUN TRẺ TRUNG</h2>
+          <p>Trẻ trung</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="../IMAGE/ao6.png" alt="6" />
+                <div class="details">
+          <h2>ÁO SƠ MI HÀN QUỐC</h2>
+          <p>Nữ tính</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="../IMAGE/ao8.png" alt="7" />
+    
+        <div class="details">
+          <h2>ÁO BUỘC NƠ VAI</h2>
+          <p>Thon dáng</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<div class="containers">
+<div class="sanpham">
+     <div class="row" >
+        <div class="col-lg-3 col">
+            <div class="card product p-2" style="width: auto;">
+                <a  href="DESCRIBE/DRE01.html">
+                <img class="pro card-img-top"src="IMAGE/dam1.png" >
+                </a>        
+            <div class="card-title product-title text-center">
+                <a  href="DESCRIBE/DRE01.html" >ĐẦM HOA PHỐI DÂY RUY BĂNG  </a>
+            </div>
+            <div class="price text-center h6">549.000đ</div>
+                           
+
+            <!-- <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="SP1"  data-img="dam1.png" onclick="tks()">
+                <a><i class="fas fa-cart-plus"></i></a>
+            </span> -->
+            <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM1" data-name="ĐẦM HOA PHỐI DÂY RUY BĂNG " data-img="dam1.png" data-price="549000" onclick="tks()"><a>
+                <i class="fas fa-cart-plus"></i>
+            </a>
+        </span>
+        </div>
+    </div> 
+    <div class="col-lg-3 col">
+        <div class="card product p-2" style="width: auto;">
+            <a  href="DESCRIBE/SHIRTS2.html">
+                <img class="pro card-img-top"src="IMAGE/ao2.png" >
+            </a>        
+        <div class="card-title product-title text-center">
+            <a  href="DESCRIBE/SHIRTS2.html" >ÁO KIỂU TAY NGẮN PHỐI BÈO </a>
+        </div>
+        <div class="price text-center h6">449.000đ</div>
+        <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="AO2" data-name="ÁO KIỂU TAY NGẮN PHỐI BÈO  " data-img="ao2.png" data-price="449000" onclick="tks()"><a>
+            <i class="fas fa-cart-plus"></i>
+        </a>
+    </span>
+        </div>
+    </div> 
+    <div class="col-lg-3 col">
+        <div class="card product p-2" style="width: auto;">
+            <a  href="DESCRIBE/DRE03.html">
+                <img class="pro card-img-top"src="IMAGE/dam3.png" >
+            </a>        
+        <div class="card-title product-title text-center">
+            <a  href="DESCRIBE/DRE03.html" >ĐẦM LỬNG CÚP 2 LỚP </a>
+        </div>
+        <div class="price text-center h6">599.000đ</div>
+        <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM3" data-name="ĐẦM LỬNG CÚP 2 LỚP  " data-img="dam3.png" data-price="599000" onclick="tks()"><a>
+            <i class="fas fa-cart-plus"></i>
+        </a>
+    </span>
+        </div>
+    </div>
+    <div class="col-lg-3 col">
+        <div class="card product p-2" style="width: auto;">
+            <a  href="DESCRIBE/SKI04.html">
+                <img class="pro card-img-top"src="IMAGE/vay4.png" >
+            </a>        
+        <div class="card-title product-title text-center">
+            <a  href="DESCRIBE/SKI04.html" >CHÂN VÁY BÚT CHÌ XẾP EO</a>
+        </div>
+        <div class="price text-center h6">399.000đ</div>
+          <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="VAY4" data-name="ÁO KIỂU TAY NGẮN PHỐI BÈO  " data-img="vay4.png" data-price="399000" onclick="tks()"><a>
+            <i class="fas fa-cart-plus"></i>
+        </a>
+    </span>
+        </div>
+        </div>
+    </div>
+    <div class="row" id="hot">
+        <div class="col-lg-3 col">
+            <div class="card product p-2" style="width: auto;">
+                <a  href="DESCRIBE/SKI03.html">
+                <img class="pro card-img-top"src="IMAGE/vay3.png" >
+            </a>        
+                <div class="card-title product-title text-center">
+                    <a  href="DESCRIBE/SKI03.html" >CHÂN VÁY A PHỐI NẸP </a>
+                </div>
+            <div class="price text-center h6">399.000đ</div>
+            <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="VAY5" data-name="CHÂN VÁY A PHỐI NẸP " data-img="vay3.png" data-price="399000" onclick="tks()"><a>
+                <i class="fas fa-cart-plus"></i>
+            </a>
+        </span>
+        </div>
+        </div>
+        <div class="col-lg-3 col">
+            <div class="card product p-2" style="width: auto;">
+                <a  href="DESCRIBE/PANTS04.html">
+                    <img class="pro card-img-top"src="IMAGE/quan4.png" >
+                </a>        
+                    <div class="card-title product-title text-center">
+                        <a  href="DESCRIBE/PANTS04.html" >QUẦN DÀI ỐNG RỘNG GẬP GẤU </a>
+                    </div>
+                <div class="price text-center h6">599.000đ</div>
+                <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="QUAN6" data-name="QUẦN DÀI ỐNG RỘNG GẬP GẤU " data-img="quan4.png" data-price="599000" onclick="tks()"><a>
+                    <i class="fas fa-cart-plus"></i>
+                </a>
+            </span>
+            </div>
+            </div>
+            <div class="col-lg-3 col">
+                <div class="card product p-2" style="width: auto;">
+                    <a  href="DESCRIBE/PANTS01.html">
+                    <img class="pro card-img-top"src="IMAGE/quan1.png" >
+                </a>        
+                    <div class="card-title product-title text-center">
+                        <a  href="DESCRIBE/PANTS01.html" >QUẨN DÀI ỐNG LOE THUN</a>
+                    </div>
+                <div class="price text-center h6">549.000đ</div>
+                <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="QUAN7" data-name="QUẨN DÀI ỐNG LOE THUN" data-img="quan1.png" data-price="549000" onclick="tks()"><a>
+                    <i class="fas fa-cart-plus"></i>
+                </a>
+            </span>
+            </div>
+        </div>
+        <div class="col-lg-3 col">
+            <div class="card product p-2" style="width: 345px; height: 504px;">
+                <a  href="DESCRIBE/DRE04.html">
+                <img class="pro card-img-top"src="IMAGE/dam8.png" >
+                </a>        
+            <div class="card-title product-title text-center">
+                <a  href="DESCRIBE/DRE04.html" >ĐẦM 2 DÂY DÀI BUỘC NƠ VAI </a>
+            </div>
+            <div class="price text-center h6">599.000đ</div>
+            <span class="text-center add-to-cart add-cart btn btn-outline-warning text-dark" data-id="DAM8" data-name="ĐẦM 2 DÂY DÀI BUỘC NƠ VAI" data-img="dam8.png" data-price="599000" onclick="tks()"><a>
+                <i class="fas fa-cart-plus"></i>
+            </a>
+        </span>
+            </div>
+        </div>  
+        </div>
+
+
+    <!-- xem thêm -->
+    
+        <div class="card-title product-title text-center">
+            <div id="product-list" class="row">
+                <!-- Products will be displayed here -->
+            </div>
+            <div class="text-center mt-3">
+                <button id="load-more" class="btn btn-primary">Xem Thêm</button>
+            </div>
+        </div>
+  
+
+</div>
+
+
+        <!-- map -->
+        <div class="container-fluid bg-pink">
+            <div class="container bg-white chitiet">
+                <div class="row">
+                    <div class="col-md-6 map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.498188757456!2d107.58395981465684!3d16.450292888646526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a1457de005d7%3A0x6608565df1f87298!2zMTc2IFRy4bqnbiBQaMO6LCBQaMaw4bubYyBWxKluaCwgVGjDoG5oIHBo4buRIEh14bq_LCBUaOG7q2EgVGhpw6puIEh14bq_IDUzMDAwMCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1664801068393!5m2!1sen!2s" width="570" height="700" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6 chitiets">
+                        <div id="tieude1" class="left">
+                            <div class="port1">
+                                <h3 class="title">
+                                    <a href="#">TIN NỖI BẬT</a>
+                                </h3>
+                            </div>
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/1-100x70.jpg" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> KINH DOANH CÓ TRÁCH NHIỆM TẠI VIỆT NAM – MỚI NHƯNG KHÔNG MỚI</a>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 02/11/2020</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/DSC_0312-3-100x70.jpg" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> Công cụ đo lường tâm lý học hành vi của cá nhân và tổ chức</a>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 04/01/2020</p>
+                            </div>
+                            </div>
+                            <div class="clear"></div>
+                            
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/DSC_0018-100x70.jpg" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> Dự án “Xây dựng văn hoá doanh nghiệp cho Tổng công ty Điện lực Dầu khí”</a>
+                            </div>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 05/12/2020</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/zzytethutruongletuan-a_GBTO-100x70.jpg" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> Hội thảo khởi động Dự án “Hỗ trợ tăng cường thể chế và chính sách Bảo hiểm y tế”</a>
+                            </div>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 12/09/2020</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/M-score-4-100x70.png" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> Đánh giá cuối kỳ dự án Dân chấm điểm M-Score</a>
+                            </div>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 15/5/2020</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/dao-tao-KPI.NPT_.PTC1_.HB_.07.05.khai-mac-4-100x70.png" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> Đào tạo BSC-KPI cho NPMB, SPMB và các Công ty Truyền tải điện 1, 2, 3, 4</a>
+                            </div>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 11/3/2020</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/Sach-ADB-100x70.jpg" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> Giới thiệu sách “Đổi mới Chế độ Công vụ, Công chức Việt Nam</a>
+                            </div>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 03/2/2020</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="port1">
+                            <div class="left thumb">
+                                <img src="images/IMG_20180123_101622-100x70.jpg" alt="">
+                            </div>
+                            <span class="title-icon"><img src="http://tc-consulting.com.vn/wp-content/uploads/2018/03/cropped-logo.png" width="15px" height="15px"></span> Đánh giá cuối kỳ dự án “Thúc đẩy hoà nhập người khuyết tật tại Việt Nam”</a>
+                            </div>
+                            <div class="ngaydang">
+                                <p>Ngày đăng: 02/06/2020</p>
+                            </div>
+                            <div class="clear"></div>
+                            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+<!--     
+        <div class="bg-pink">
+            <div class="container footer">
+                    <div class="row">
+                        <div class="col-md-3" >
+                        <div class="time-footer">
+                            <h3>Công ty TNHH HNOSS</h3>
+                            <p>Lịch làm việc: T2 - T7</p>
+                            <p>Sáng: 8h - 12h</p>
+                            <p>Chiều : 13h30 - 17h30</p>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Hướng dẫn</h3>
+                            <ul class="link-footer">
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Khắc laser là gì?</a></li>
+                                <li><a href="#">Hướng dẫn dán da</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Thông tin</h3>
+                            <ul class="link-footer">
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Giới thiệu HNOSS</a></li>
+                                <li><a href="#">Lưu ý cần biết</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Liên hệ</h3>
+                            <ul class="link-footer">
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><hr style="width: 90%;">
+                <div class="container">
+                    <div class="row footer-contact">
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <p>Hà Nội: Số 45 Ngõ 199 Hồ Tùng Mậu, P. Cầu Diễn.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <p>Hồ Chí Minh: 29 Đường Phan Chu Trinh, P Hiệp Phú.</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Email:<br>info@hnoss.vn</p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-mobile"></i>
+                            <p>Phone:<br>08.3344.0608</p>
+                        </div>
+                    </div>
+                </div><hr width="90%">
+                <div class="container footer-menu">
+                    <div class="row">
+                        <div class="col-md-4 text-start">
+                            <img src="../IMAGE/dathongbao.webp" style="max-width: 150px;">
+                        </div>
+                        <div class="col-md-8 text-start">
+                            <p>Giấy CNĐKKD: 0313026493 - Ngày Cấp: 24/11/2014 - Nơi Cấp: Sở kế hoạch và đầu tư</p>
+                        </div>
+                    </div>
+                </div>
+        </div>   -->
+        <div class="bg-pink">
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="time-footer">
+                            <h3>Công ty TNHH HNOSS</h3>
+                            <p>Lịch làm việc: T2 - T7</p>
+                            <p>Sáng: 8h - 12h</p>
+                            <p>Chiều : 13h30 - 17h30</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Hướng dẫn</h3>
+                        <ul class="link-footer">
+                            <li><a href="#">Thanh toán</a></li>
+                            <li><a href="#">Khắc laser là gì?</a></li>
+                            <li><a href="#">Hướng dẫn dán da</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Thông tin</h3>
+                        <ul class="link-footer">
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Giới thiệu HNOSS</a></li>
+                            <li><a href="#">Lưu ý cần biết</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Liên hệ</h3>
+                        <ul class="link-footer">
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 90%;">
+            <div class="container">
+                <div class="row footer-contact text-center">
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <p>Hà Nội: Số 45 Ngõ 199 Hồ Tùng Mậu, P. Cầu Diễn.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <p>Hồ Chí Minh: 29 Đường Phan Chu Trinh, P Hiệp Phú.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email:<br>info@hnoss.vn</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-mobile"></i>
+                        <p>Phone:<br>08.3344.0608</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 90%;">
+            <div class="container footer-menu">
+                <div class="row">
+                    <div class="col-md-4 text-start">
+                        <img src="../../IMAGE/dathongbao.webp" style="max-width: 150px;">
+                    </div>
+                    <div class="col-md-8 text-start">
+                        <p>Giấy CNĐKKD: 0313026493 - Ngày Cấp: 24/11/2014 - Nơi Cấp: Sở kế hoạch và đầu tư</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="JS/product.js"></script>
+<script src="JS/giohang.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+    });
+</script>
+<script src="JS/spin.js"></script>
+<script src="JS/app.js"></script>
+<script src="JS/jQuery.js" >
+</script>
+<script>
+jQuery(document).ready(function ($) {
+ $(".slider-img").on("click", function () {
+   $(".slider-img").removeClass("active");
+   $(this).addClass("active");
+ });
+});
+</script>
+
+
+    </body>
+    </html>
